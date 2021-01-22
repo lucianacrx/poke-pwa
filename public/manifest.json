@@ -1,45 +1,45 @@
 {
-    "name": "Pokedex as Progressive Web App",
-    "short_name": "Pokedex",
-    "start_url": "/",
-    "scope": ".",
-    "display": "standalone",
-    "orientation": "portrait-primary",
-    "background_color": "#363B81",
-    "theme_color": "#363B81",
-    "description": "A simple Pokedex",
-    "dir": "ltr",
-    "lang": "en-US",
-    "icons": [
-      {
-        "src": "/assets/icons/poke-48x48.png",
-        "type": "image/png",
-        "sizes": "48x48"
-      },
-      {
-        "src": "/assets/icons/poke-64x64.png",
-        "type": "image/png",
-        "sizes": "64x64"
-      },
-      {
-        "src": "/assets/icons/poke-72x72.png",
-        "type": "image/png",
-        "sizes": "72x72"
-      },
-      {
-        "src": "/assets/icons/poke-96x96.png",
-        "type": "image/png",
-        "sizes": "96x96"
-      },
-      {
-        "src": "/assets/icons/poke-128x128.png",
-        "type": "image/png",
-        "sizes": "128x128"
-      },
-      {
-        "src": "/assets/icons/poke-256x256.png",
-        "type": "image/png",
-        "sizes": "256x256"
-      }
-    ]
-  }
+  "name": "Pokedex as Progressive Web App",
+  "short_name": "Pokedex",
+  "start_url": "/",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#363B81",
+  "theme_color": "#363B81",
+  "description": "A simple Pokedex",
+  "dir": "ltr",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "/assets/icons/poke-48x48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/assets/icons/poke-64x64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "/assets/icons/poke-72x72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "/assets/icons/poke-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/assets/icons/poke-128x128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/assets/icons/poke-256x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    }
+  ]
+}

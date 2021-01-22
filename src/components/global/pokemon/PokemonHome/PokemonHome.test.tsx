@@ -5,6 +5,6 @@ import PokemonHome from "./PokemonHome";
 
 describe("PokemonHome", () => {
   it("renders with default props", () => {
-    render(<PokemonHome />);
+    render(<PokemonHome pokemones={[]} />);
   });
 });

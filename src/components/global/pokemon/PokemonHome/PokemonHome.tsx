@@ -8,17 +8,33 @@ import Link from "next/link";
 
 const PokemonHome: React.FC<Props> = props => {
   const { pokemones } = props;
+
+  const cardClickHandler = (
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    id: number
+  ) => {
+    if ("caches" in window) {
+      caches.open("user-requested").then(cache => {
+        cache.add(`/pokemon/${id}`);
+      });
+    }
+  };
+
   return (
     <Styles className="PokemonHome">
       <Header pageTitle="Pokemón" />
       <main className="PokemonHome__main">
-        {pokemones.map(pokemon => (
-          <Link href={`/pokemon/${pokemon.id}`} passHref>
-            <a>
-              <PokemonCard key={pokemon.id} pokemon={pokemon} />
-            </a>
-          </Link>
-        ))}
+        {pokemones.map(pokemon => {
+          const { id } = pokemon;
+
+          return (
+            <Link key={id} href={`/pokemon/${id}`} passHref>
+              <a href="*" onClick={e => cardClickHandler(e, id)}>
+                <PokemonCard key={pokemon.id} pokemon={pokemon} />
+              </a>
+            </Link>
+          );
+        })}
       </main>
     </Styles>
   );
